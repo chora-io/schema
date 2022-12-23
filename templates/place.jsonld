@@ -1,0 +1,9 @@
+{
+  "@context": "https://schema.chora.io/contexts/place.jsonld",
+  "name": "",
+  "description": "",
+  "geo": {
+    "latitude": "",
+    "longitude": ""
+  }
+}

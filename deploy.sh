@@ -12,92 +12,67 @@ mkdir -p "public"
 # add CNAME file
 echo 'schema.chora.io' >> public/CNAME
 
-########## root ##########
+gen_public_files() {
 
+  # copy jsonld files
+  cp -r "$1" public/"$1"
+
+  # change directories
+  cd public/"$1"
+
+  # file count
+  count=0
+
+  # file total
+  total=$(find . -type f | wc -l)
+
+  # add index
+  for f in *; do
+    count=$((count+1))
+    if [ $count -eq 1 ]; then
+      echo "{" >> index.jsonld
+    fi
+    if [ $count -eq "$total" ]; then
+      echo "  \"${f%.jsonld}\": \"https://schema.chora.io/$1/$f\"" >> index.jsonld
+      echo "}" >> index.jsonld
+    else
+      echo "  \"${f%.jsonld}\": \"https://schema.chora.io/$1/$f\"," >> index.jsonld
+    fi
+  done
+
+  # add index redirect
+  echo "<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=\"refresh\" content=\"0; url='index.jsonld'\" />
+  </head>
+</html>" >> index.html
+
+  # change directories
+  cd ../../
+}
+
+gen_public_files "contexts"
+gen_public_files "examples"
+gen_public_files "templates"
+
+# change directories
 cd public
 
-# shellcheck disable=SC2129
-echo "{" >> index.jsonld
-echo "  \"contexts\": \"https://schema.chora.io/contexts\"," >> index.jsonld
-echo "  \"examples\": \"https://schema.chora.io/examples\"" >> index.jsonld
-echo "}" >> index.jsonld
+# add index
+echo "{
+  \"contexts\": \"https://schema.chora.io/contexts/index.jsonld\",
+  \"examples\": \"https://schema.chora.io/examples/index.jsonld\",
+  \"templates\": \"https://schema.chora.io/templates/index.jsonld\"
+}" >> index.jsonld
 
+# add index redirect
 echo "<!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv=\"refresh\" content=\"0; url='index.jsonld'\" />
   </head>
 </html>" >> index.html
-
-cd ../
-
-########## contexts ##########
-
-cp -r contexts public/contexts
-cd public/contexts
-
-count=0
-total=$(find . -type f | wc -l)
-
-for f in *; do
-  count=$((count+1))
-  if [ $count -eq 1 ]; then
-    echo "{" >> index.jsonld
-  fi
-  if [ $count -eq "$total" ]; then
-    echo "  \"${f%.jsonld}\": \"https://schema.chora.io/contexts/$f\"" >> index.jsonld
-    echo "}" >> index.jsonld
-  else
-    echo "  \"${f%.jsonld}\": \"https://schema.chora.io/contexts/$f\"," >> index.jsonld
-  fi
-done
-
-echo "<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv=\"refresh\" content=\"0; url='index.jsonld'\" />
-  </head>
-</html>" >> index.html
-
-cd ../../
-
-########## examples ##########
-
-cp -r examples public/examples
-cd public/examples
-
-count=0
-total=$(find . -type f | wc -l)
-
-for f in *; do
-  count=$((count+1))
-  if [ $count -eq 1 ]; then
-    echo "{" >> index.jsonld
-  fi
-  if [ $count -eq "$total" ]; then
-    echo "  \"${f%.jsonld}\": \"https://schema.chora.io/examples/$f\"" >> index.jsonld
-    echo "}" >> index.jsonld
-  else
-    echo "  \"${f%.jsonld}\": \"https://schema.chora.io/examples/$f\"," >> index.jsonld
-  fi
-done
-
-echo "<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv=\"refresh\" content=\"0; url='index.jsonld'\" />
-  </head>
-</html>" >> index.html
-
-cd ../../
-
-##############################
-
-# change to public directory
-cd public
-
-# clean up git
-rm -rf .git
 
 # git init and commit
 git init
@@ -106,5 +81,3 @@ git commit -m 'publish'
 
 # push to gh-pages branch
 git push https://github.com/choraio/schema master:gh-pages -f
-
-cd -
