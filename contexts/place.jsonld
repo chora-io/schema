@@ -1,14 +1,14 @@
 {
   "@context": {
-    "name": "http://schema.org/name",
-    "description": "http://schema.org/description",
-    "geo": "http://schema.org/geo",
+    "name": "https://schema.org/name",
+    "description": "https://schema.org/description",
+    "geo": "https://schema.org/geo",
     "latitude": {
-      "@id": "http://schema.org/latitude",
+      "@id": "https://schema.org/latitude",
       "@type": "xsd:float"
     },
     "longitude": {
-      "@id": "http://schema.org/longitude",
+      "@id": "https://schema.org/longitude",
       "@type": "xsd:float"
     }
   }
