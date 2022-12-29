@@ -1,5 +1,5 @@
 {
-  "@context": "https://schema.chora.io/contexts/place.jsonld",
+  "@context": "https://schema.chora.io/contexts/geonode.jsonld",
   "name": "",
   "description": "",
   "geo": {

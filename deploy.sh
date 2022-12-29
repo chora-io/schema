@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# abort on errors
+# abort on error
 set -e
 
 # clean up public
@@ -66,6 +66,7 @@ echo "$index_json" >> public/index.jsonld
 # add site index redirect
 echo "$index_html" >> public/index.html
 
+# generate public files
 gen_public_files() {
 
   # copy jsonld files
@@ -83,7 +84,7 @@ gen_public_files() {
   # set index json using template
   index_json="$index_json_template"
 
-  # add index json
+  # loop through files
   for f in *; do
 
     # increment count

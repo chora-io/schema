@@ -1,6 +1,6 @@
 # schema
 
-standards-based linked data schemas
+linked data schemas
 
 ## Resources 
 

@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "name": "https://schema.org/name",
+    "description": "https://schema.org/description"
+  }
+}
