@@ -1,0 +1,5 @@
+{
+  "@context": "https://schema.chora.io/contexts/voucher.jsonld",
+  "name": "Member Vouchers",
+  "description": "Vouchers issued to members of the cooperative."
+}
