@@ -135,4 +135,4 @@ git add -A
 git commit -m 'publish'
 
 # push to gh-pages branch
-git push https://github.com/choraio/schema master:gh-pages -f
+git push https://github.com/chora-io/schema master:gh-pages -f
