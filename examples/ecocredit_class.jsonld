@@ -1,0 +1,5 @@
+{
+  "@context": "https://schema.chora.io/contexts/ecocredit_class.jsonld",
+  "name": "Community Forest Credits",
+  "description": "Community Forest Credits are practice-based forest credits."
+}
