@@ -1,0 +1,4 @@
+{
+  "@context": "https://schema.chora.io/contexts/voucher_issuance.jsonld",
+  "description": "Vouchers backed by chora tokens managed by the treasury."
+}

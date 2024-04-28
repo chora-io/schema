@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "name": "https://schema.org/name",
+    "description": "https://schema.org/description",
+    "geo": "https://schema.org/geo",
+    "latitude": {
+      "@id": "https://schema.org/latitude",
+      "@type": "xsd:float"
+    },
+    "longitude": {
+      "@id": "https://schema.org/longitude",
+      "@type": "xsd:float"
+    }
+  }
+}

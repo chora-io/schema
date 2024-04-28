@@ -1,0 +1,5 @@
+{
+  "@context": "https://schema.chora.io/contexts/group_proposal.jsonld",
+  "name": "Create Geonode",
+  "description": "A proposal to create a geonode for the nature preserve."
+}

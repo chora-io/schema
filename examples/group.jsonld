@@ -1,0 +1,5 @@
+{
+  "@context": "https://schema.chora.io/contexts/group.jsonld",
+  "name": "Nature Protectors",
+  "description": "A group dedicated to protecting nature."
+}

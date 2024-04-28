@@ -1,0 +1,4 @@
+{
+  "@context": "https://schema.chora.io/contexts/group_vote.jsonld",
+  "reason": "The geonode will help raise funds for the nature preserve."
+}

@@ -1,0 +1,110 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://schema.chora.io/templates/ecocredit_batch.jsonld",
+        "name": "ecocredit_batch"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://schema.chora.io/templates/ecocredit_class.jsonld",
+        "name": "ecocredit_class"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://schema.chora.io/templates/ecocredit_project.jsonld",
+        "name": "ecocredit_project"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": "https://schema.chora.io/templates/ecosystem_monitor.jsonld",
+        "name": "ecosystem_monitor"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@id": "https://schema.chora.io/templates/ecosystem_subject.jsonld",
+        "name": "ecosystem_subject"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@id": "https://schema.chora.io/templates/ecosystem_verifier.jsonld",
+        "name": "ecosystem_verifier"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@id": "https://schema.chora.io/templates/group.jsonld",
+        "name": "group"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@id": "https://schema.chora.io/templates/group_member.jsonld",
+        "name": "group_member"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@id": "https://schema.chora.io/templates/group_policy.jsonld",
+        "name": "group_policy"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@id": "https://schema.chora.io/templates/group_proposal.jsonld",
+        "name": "group_proposal"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@id": "https://schema.chora.io/templates/group_vote.jsonld",
+        "name": "group_vote"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@id": "https://schema.chora.io/templates/voucher.jsonld",
+        "name": "voucher"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@id": "https://schema.chora.io/templates/voucher_issuance.jsonld",
+        "name": "voucher_issuance"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.chora.io/contexts/ecocredit_batch.jsonld",
+  "benefits": [
+    "chora:13toVfvC2YxrrfSXWB5h2BGHiXZURsKxWUz72uDRDSPMCrYPguGUXSC.rdf"
+  ],
+  "certifications": [
+    "chora:13toVfvC2YxrrfSXWB5h2BGHiXZURsKxWUz72uDRDSPMCrYPguGUXSC.rdf"
+  ],
+  "reports": [
+    "chora:13toVfvC2YxrrfSXWB5h2BGHiXZURsKxWUz72uDRDSPMCrYPguGUXSC.rdf"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "@context": "https://schema.chora.io/contexts/ecosystem_subject.jsonld",
+  "name": "",
+  "description": "",
+  "geo": {
+    "latitude": "",
+    "longitude": ""
+  }
+}

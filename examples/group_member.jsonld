@@ -1,0 +1,5 @@
+{
+  "@context": "https://schema.chora.io/contexts/group_member.jsonld",
+  "name": "Jane Doe",
+  "description": "Experienced remote sensing specialist."
+}
