@@ -1,5 +1,5 @@
 {
-  "@context": "https://schema.chora.io/contexts/geonode.jsonld",
+  "@context": "https://schema.chora.io/contexts/ecosystem_subject.jsonld",
   "name": "Gazzam Lake Nature Preserve",
   "description": "444-acre forest, lake & wetland refuge.",
   "geo": {

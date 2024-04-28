@@ -1,5 +1,5 @@
 {
-  "@context": "https://schema.chora.io/contexts/geonode.jsonld",
+  "@context": "https://schema.chora.io/contexts/ecosystem_subject.jsonld",
   "name": "",
   "description": "",
   "geo": {
